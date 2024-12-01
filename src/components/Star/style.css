@@ -1,0 +1,20 @@
+  .star{
+    margin: 10px;
+    font-size: 30px;
+  }
+  .rating{
+    font-size: 20px;
+  }
+  button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .on{
+    color: 	#ffa534;
+  }
+  .off{
+    color: #ccc;
+  }

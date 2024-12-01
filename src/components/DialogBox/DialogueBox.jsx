@@ -5,13 +5,15 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import {Dialog,DialogActions,DialogContentText,DialogTitle,DialogContent,Button, Stack, TextField} from '@mui/material'
+import StarRating from '../Star/StarRating';
 const DialogueBox = ({open, close, review,handlReview }) => {
     const {id,name}=review
     const [selectedValue, setSelectedValue] = useState(null)
     const [comment, setComment] = useState(null)
 
-  const handleChange = (event) => {
-    setSelectedValue(event.target.value);
+  const handleChange = (num) => {
+    setSelectedValue(num);
+    console.log(num)
   };
 
   const handleComment = (event) => {
@@ -57,7 +59,7 @@ const DialogueBox = ({open, close, review,handlReview }) => {
                 />
             </Stack>
             <Stack direction='row'>
-            <FormControl>
+            {/* <FormControl>
                 <FormLabel id="demo-radio-buttons-group-label">Rating</FormLabel>
                 <RadioGroup
                     aria-labelledby="demo-radio-buttons-group-label"
@@ -71,7 +73,8 @@ const DialogueBox = ({open, close, review,handlReview }) => {
                     <FormControlLabel value="4" control={<Radio />} label="4" />
                     <FormControlLabel value="5" control={<Radio />} label="5" />
                 </RadioGroup>
-            </FormControl>
+            </FormControl> */}
+            <StarRating handleChange={handleChange}/>
             </Stack>
         </DialogContent>
         <DialogActions>
