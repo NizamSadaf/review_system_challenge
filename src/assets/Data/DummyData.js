@@ -14,7 +14,7 @@ const dummyData=[
         id:2,
         name:"UX Design | UX Writing, UX Research and Prototyping",
         description:"",
-        providedBy:"Provided by: Andressa Siqueira",
+        providedBy:"Andressa Siqueira",
         opensOn:"Monday to Friday",
         price:"75",
         time:"8.00-18.00",
